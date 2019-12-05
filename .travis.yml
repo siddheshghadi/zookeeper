@@ -1,17 +1,19 @@
 language: java
 sudo: false
-jdk:
-  - openjdk8
-  - oraclejdk11
+
+matrix:
+  include:
+      os: linux-ppc64le
+      jdk: openjdk8
 
 cache:
   directories:
   - "$HOME/.m2"
 
-script: mvn clean install -DskipTests spotbugs:check
+script: 
+  - mvn clean install -DskipTests spotbugs:check
+  - mvn test
 
 branches:
   only:
-  - master
-  - branch-3.5
-  - branch-3.4
+  - branch-3.5.5
