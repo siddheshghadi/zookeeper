@@ -1,7 +1,7 @@
 language: java
 sudo: false
 arch: ppc64le
-os: linux-ppc64le
+os: linux
 dist: trusty
 jdk: openjdk11
 
@@ -12,7 +12,6 @@ cache:
 install: sudo apt-get install maven 
 
 script: 
-  - mvn --version
   - mvn clean install -DskipTests spotbugs:check
   - mvn test
 
