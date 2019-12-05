@@ -9,7 +9,7 @@ cache:
   directories:
   - "$HOME/.m2"
 
-install: apt install maven
+install: sudo apt-get install maven
 
 script: 
   - mvn clean install -DskipTests spotbugs:check
