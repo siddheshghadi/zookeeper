@@ -1,5 +1,6 @@
 language: java
 sudo: false
+arch: ppc64le
 os: linux-ppc64le
 jdk: openjdk8
 
