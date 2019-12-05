@@ -3,7 +3,7 @@ sudo: false
 arch: ppc64le
 os: linux-ppc64le
 dist: trusty
-jdk: openjdk8
+jdk: openjdk11
 
 cache:
   directories:
