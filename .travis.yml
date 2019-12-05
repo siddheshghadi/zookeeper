@@ -2,11 +2,14 @@ language: java
 sudo: false
 arch: ppc64le
 os: linux-ppc64le
+dist: trusty
 jdk: openjdk8
 
 cache:
   directories:
   - "$HOME/.m2"
+
+install: apt install maven
 
 script: 
   - mvn clean install -DskipTests spotbugs:check
