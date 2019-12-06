@@ -16,7 +16,7 @@ install: sudo apt-get install maven
 script: 
   - mvn --version
   - mvn clean install -DskipTests spotbugs:check
-  - mvn test
+  - mvn test -DforkCount=4
 
 branches:
   only:
