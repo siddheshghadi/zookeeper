@@ -2,10 +2,10 @@ language: java
 sudo: false
 
 matrix:
-	include:
+  include:
      arch: ppc64le
-	   os: linux-ppc64le
-	   jdk: openjdk8
+     os: linux-ppc64le
+     jdk: openjdk11
 
 cache:
   directories:
