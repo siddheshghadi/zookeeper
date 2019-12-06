@@ -1,8 +1,11 @@
 language: java
 sudo: false
-arch: ppc64le
-os: linux-ppc64le
-jdk: openjdk11
+
+matrix:
+	include:
+     arch: ppc64le
+	   os: linux-ppc64le
+	   jdk: openjdk8
 
 cache:
   directories:
