@@ -1,5 +1,8 @@
 language: java
 sudo: false
+dist: trusty
+arch: ppc64le
+os: linux
 jdk:
   - openjdk8
   - openjdk11
